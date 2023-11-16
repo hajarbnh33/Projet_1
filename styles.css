@@ -1,3 +1,41 @@
-h1{
-    color: blueviolet;
+.logo{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 30px 50px;
+    gap: 10px;
+}
+
+body{
+    font-family: Raleway, sans-serif;
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 934.91px;
+    align-self: stretch;
+}
+
+.nav{
+    display: flex;
+    margin-left: auto;
+    align-items: center;
+    gap: 68px;
+    padding: 0px 50px;
+}
+
+a{
+    text-decoration: none;
+    color:black ;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+a:hover{
+    color: #0065fc;
+    text-decoration: overline;
 }
