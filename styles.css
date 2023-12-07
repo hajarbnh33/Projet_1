@@ -1,40 +1,614 @@
-.logo{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 30px 50px;
-    gap: 10px;
-}
-
-body{
+/* Corps de la page */
+* {
     font-family: Raleway, sans-serif;
 }
 
-.header{
+body {
+    display: flex;
+    margin: 0;
+    justify-content: center;
+    gap: 35px;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 58px;
+}
+
+/* Header*/
+
+.header img {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 30px;
+    gap: 10px;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 100%;
+}
+
+a:hover {
+    color: #0065fc;
+    text-decoration: overline;
+}
+
+.header {
     display: flex;
     justify-content: center;
     align-items: flex-start;
     align-self: stretch;
 }
 
-.nav{
+.nav {
     display: flex;
     margin-left: auto;
     align-items: center;
     gap: 68px;
     padding: 0px 50px;
+    height: 19px;
 }
 
-a{
-    text-decoration: none;
-    color:black ;
-    font-size: 16px;
+/* Main*/
+
+.Container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 35px;
+    margin-bottom: 35px;
+}
+
+/* ITEMS 1*/
+
+.items1 {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+}
+
+.T1 {
+    font-size: 1.3em;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 4px;
+}
+
+.P1 {
+    font-size: 0.8em;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    height: 19px;
+    margin-top: 4px;
+}
+
+/*ITEMS 2*/
+
+.items2 {
+    display: flex;
+    flex-direction: row;
+}
+
+.icone {
+    border-radius: 15px 0px 0px 15px;
+    background-color: #f2f2f2;
+    width: 50px;
+    height: 49px;
+    flex-shrink: 0;
+}
+
+div i.fa-location-dot {
+    color: black; /* vu avec mentor: ajouter balise, id ou class pour avoir plus de priorité */
+    align-items: center;
+    padding: 15px 16px;
+    font-size: 20px;
+    margin: auto;
+}
+
+.Rechercher {
+    border-radius: 0px 15px 15px 0px;
+    border: 1px solid var(--Blue, #0065fc);
+    background: var(--Blue, #0065fc);
+    display: flex;
+    height: 49px;
+    padding: 15px 16px;
+    align-items: center;
+    gap: 10px;
+}
+
+.trechercher {
+    color: var(--White, #fff);
+    text-align: center;
+    font-family: Raleway;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+#lieux {
+    border: none;
+    height: 49px;
+    outline: none;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 800;
+    line-height: normal;
+}
+
+/* ITEMS 3 */
+
+.items3 {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.filtres {
+    color: black;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.Filtre-title {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    border-radius: 25px;
+    border: 2px solid var(--grey-tint-2, #d9d9d9);
+    height: 30px;
+    font-weight: 700;
+    padding: 4px 19px;
+    align-items: center;
+}
+
+.Filtre-title:hover {
+    background: #deebff;
+}
+
+/* INFO */
+
+.info {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.infos {
+    font-size: 0.8em;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
 }
 
-a:hover{
-    color: #0065fc;
-    text-decoration: overline;
+div i.fa-info {
+    font-size: 10px;
+    margin: -3px;
+    font-size: 10px;
+    padding: 7px;
+    border-radius: 50%;
+    width: 8px;
+    height: 8px;
+    border: solid darkgray 1px;
+    border-width: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
+/* Hebergements */
+
+.hebergements-and-populaires {
+    display: flex;
+    gap: 40px;
+    justify-content: space-between;
+}
+
+.hebergements {
+    display: flex;
+    background: #f2f2f2;
+    border-radius: 15px;
+    flex-direction: column;
+    padding: 30px;
+    gap: 30px;
+}
+
+.hebergement-title {
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin: 0%;
+}
+
+.hotels {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 0%;
+}
+
+.hotel-card img {
+    height: 124px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 20px 20px 0px 0px;
+    border: 5px solid var(--White, #fff);
+    box-sizing: border-box;
+}
+
+.texte1 {
+    display: flex;
+    padding: 0px 15px;
+    flex-direction: column;
+    align-items: flex-start;
+    align-self: stretch;
+    gap: 8px;
+    margin: 0%;
+    color: black;
+}
+
+.hotel-card {
+    display: flex;
+    padding-bottom: 15px;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 20px;
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+    flex-grow: 1;
+    width: 25%;
+}
+
+.hotel-title {
+    margin-top: 4px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 0;
+}
+
+.hotel-subtile {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0;
+}
+
+.afficher {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.populaires {
+    display: flex;
+    padding: 30px;
+    flex-direction: column;
+    gap: 30px;
+    border-radius: 15px;
+    background: #f2f2f2;
+}
+
+.populaires-cards {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+.populaires-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+:root {
+    --main-color: #0065fc;
+    --main-bg-color: #f2f2f2;
+    --filter-bg-color: #deebff;
+}
+
+.fa-solid {
+    color: var(--main-color);
+}
+
+.section-title {
+    margin: 0;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    width: 350px;
+    height: 26px;
+}
+
+.card {
+    display: flex;
+    background-color: white;
+    border-radius: 20px;
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+    height: 146px;
+    align-items: center;
+    width: 100%;
+    border-top: 5px solid var(--White, #fff);
+    border-bottom: 5px solid var(--White, #fff);
+}
+
+.card img {
+    padding: 0%;
+    object-fit: cover;
+    width: 123px;
+    height: 146px;
+    border-radius: 20px 0px 0px 20px;
+    border-top: 5px solid var(--White, #fff);
+    border-left: 5px solid var(--White, #fff);
+    border-bottom: 5px solid var(--White, #fff);
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex: 1 0 0;
+    align-self: stretch;
+    padding: 10px 5px 5px 15px;
+    gap: 24px;
+}
+
+.card-txt {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    flex: 1 0 0;
+    align-self: stretch;
+}
+
+.card-title {
+    font-size: 16px;
+    margin: 0px;
+}
+
+.card-subtitle {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+.euro {
+    font-weight: 700;
+}
+
+.neutral-star {
+    color: var(--main-bg-color);
+}
+
+/*Activités à Marseille */
+
+.activites-marseille {
+    display: flex;
+    padding: 30px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+.activites-title {
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.subtitle-act {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin: 0;
+}
+
+.activites-txt {
+    display: flex;
+    padding: 20px 19px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    align-self: stretch;
+}
+
+.activites-card img {
+    object-fit: cover;
+    height: calc(100% - 60px);
+    width: 100%;
+    align-self: stretch;
+    border-radius: 20px 20px 0px 0px;
+    flex-shrink: 0;
+}
+
+.activites-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+    align-self: stretch;
+}
+
+.activites-content {
+    display: flex;
+    height: 439px;
+    flex-direction: column;
+    flex: 1;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+}
+
+/*FOOTER*/
+
+.bas-page {
+    display: flex;
+    padding: 20px;
+    flex-direction: column;
+    align-items: flex-start;
+    flex: 1 0 0;
+    align-self: stretch;
+    gap: 15px;
+}
+
+.footer-content {
+    display: flex;
+    background: #f2f2f2;
+}
+
+.footer-title {
+    margin: 0%;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.footer-subtitle {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    margin: 0%;
+    padding-left: 0px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    gap: 15px;
+}
+
+/****** Media queries ***********/
+/* Medium devices (tablets, less/equal than 1024px) */
+
+@media (max-width: 1024px) {
+    .main-container {
+        padding-bottom: 0px;
+    }
+
+    .hebergements-and-populaires {
+        flex-direction: column;
+    }
+
+    .hotels {
+        justify-content: space-between;
+        gap: 20px;
+    }
+
+    .populaires {
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    .populaires-cards {
+        flex-direction: row;
+        gap: 20px;
+        align-self: stretch;
+    }
+
+    .card-content {
+        width: 100%;
+    }
+
+    .card img {
+        width: 34%;
+    }
+
+    .populaires-title {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .populaires-cards .card-title {
+        font-size: 14px;
+    }
+
+    .populaires-cards .card-subtitle {
+        font-size: 13px;
+    }
+
+    .activites-card {
+        width: 100%;
+        gap: 30px;
+    }
+
+    .activites-content {
+        height: 270px;
+    }
+
+    .activites-content img {
+        height: 200px;
+    }
+
+    .subtitle-act {
+        font-size: 13px;
+    }
+}
+
+/* Small devices (phones, less than 768px) */
+@media (min-width: 320px) and (max-width: 768px) {
+    .main-container {
+        flex-direction: column;
+        align-items: ;
+    }
+
+    .header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header img {
+        padding: 30px;
+    }
+
+    .nav {
+        margin: 0px;
+    }
+
+    .nav a:hover {
+        text-decoration: underline;
+    }
+
+    .Container {
+        margin-top: 0px;
+    }
+
+    .items1 {
+        width: 45%;
+    }
+
+    .items2 {
+    }
+
+    .items3 {
+    }
+}
+
+/* dev ne pas commit 
+
+.dev_hide {
+    display: none !important;
+}
+*/
