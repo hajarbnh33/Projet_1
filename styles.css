@@ -529,6 +529,16 @@ div i.fa-info {
     gap: 15px;
 }
 
+li a {
+    border-bottom: 1px transparent solid;
+    transition: all 300ms ease-in-out;
+}
+
+li a:hover {
+    border-color: #0065fc;
+    color: #0065fc;
+}
+
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
 
