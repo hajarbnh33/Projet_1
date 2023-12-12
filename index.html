@@ -23,12 +23,16 @@
                 <img src="images/Logo.svg" alt="Logo du site Booki" />
 
                 <nav class="nav">
-                    <a href="#hebergement_marseille">Hébergements</a>
-                    <a href="#activites_marseille">Activités</a>
+                    <a href="#hebergement_marseille">
+                        <div class="hebergement-nav">Hébergements</div>
+                    </a>
+                    <a href="#activites_marseille">
+                        <div class="hebergement-nav">Activités</div>
+                    </a>
                 </nav>
             </header>
-
-            <main>
+            
+        <main>  
                 <div class="Container">
                     <div class="items1">
                         <h1 class="T1">
@@ -38,47 +42,55 @@
                             En plein centre-ville ou en pleine nature
                         </p>
                     </div>
-                    <div class="items2">
+                    <form method="get" action="#" class="items2">
                         <div class="icone">
                             <i class="fa-solid fa-location-dot"></i>
                         </div>
                         <div class="formulaire">
-                            <form method="get" action="">
-                                <label for="lieux"></label>
-                                <input
-                                    type="search"
-                                    value="Marseille,France"
-                                    name="recherche"
-                                    id="lieux"
-                                />
-                            </form>
+                            <label for="lieux"></label>
+                            <input
+                                type="search"
+                                placeholder="Marseille,France"
+                                name="recherche"
+                                id="lieux"
+                                required
+                            />
                         </div>
                         <button class="Rechercher">
                             <span class="trechercher">Rechercher</span>
                         </button>
-                    </div>
+                        <button class="loupe">
+                            <span class="loupe-1"
+                                ><i class="fa-solid fa-magnifying-glass"></i
+                            ></span>
+                        </button>
+                    </form>
 
                     <div class="items3">
-                        <div class="Filtres">Filtres</div>
-
-                        <div class="Filtre-title">
-                            <i class="fa-solid fa-money-bill-wave"></i>
-                            <div class="Economique">Economique</div>
+                        <div class="Filtres">
+                            <h3>Filtres</h3>
                         </div>
+                        <div class="liste-filtre">
+                            <div class="Filtre-title">
+                                <i class="fa-solid fa-money-bill-wave"></i>
+                                <div class="Economique">Economique</div>
+                            </div>
 
-                        <div class="Filtre-title">
-                            <i class="fa-solid fa-person"></i>
-                            <div class="Familial">Familial</div>
+                            <div class="Filtre-title">
+                                <i class="fa-solid fa-person"></i>
+                                <div class="Familial">Familial</div>
+                            </div>
+
+                            <div class="Filtre-title">
+                                <i class="fa-solid fa-heart"></i>
+                                <div class="Romantique">Romantique</div>
+                            </div>
+
+                            <div class="Filtre-title">
+                                <i class="fa-solid fa-fire"></i>
+                                <div class="Nospepites">Nos pépites</div>
+                            </div>
                         </div>
-
-                        <div class="Filtre-title">
-                            <i class="fa-solid fa-heart"></i>
-                            <div class="Romantique">Romantique</div>
-                        </div>
-
-                        <div class="Filtre-title">
-                            <i class="fa-solid fa-fire"></i>
-                            <div class="Nospepites">Nos pépites</div>
                         </div>
                     </div>
 
@@ -93,10 +105,7 @@
 
                 <div class="hebergements-and-populaires">
                     <section class="hebergements">
-                        <h2
-                            class="hebergement-title"
-                            id="hebergement_marseille"
-                        >
+                        <h2 class="hebergement-title" id="hebergement_marseille">
                             Hébergements à Marseille
                         </h2>
 
@@ -285,8 +294,7 @@
                                 <a href="#">
                                     <img
                                         src="images/auberge-canebière.jpg"
-                                        alt="Auberge Canabiere"
-                                    />
+                                        alt="Auberge Canabière" />
                                     <div class="texte1">
                                         <h3 class="hotel-title">
                                             Auberge La Canebière
@@ -575,6 +583,8 @@
                     </article>
                 </section>
             </main>
+    
+
             <footer class="footer-content">
                 <div class="bas-page">
                     <h2 class="footer-title">À propos</h2>
