@@ -68,7 +68,6 @@ nav a {
     flex-direction: column;
     align-items: flex-start;
     gap: 35px;
-    margin-bottom: 35px;
 }
 
 /* ITEMS 1*/
@@ -647,8 +646,16 @@ li a:hover {
         align-self: center;
     }
 
+    .items2 {
+        width: 100%;
+    }
+
     .Rechercher {
         display: none;
+    }
+
+    .formulaire {
+        width: 100%;
     }
 
     .loupe {
