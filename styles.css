@@ -612,6 +612,7 @@ li a:hover {
 }
 
 /* Small devices (phones, less than 768px) */
+
 @media (min-width: 320px) and (max-width: 768px) {
     .main-container {
         flex-direction: column;
@@ -644,10 +645,6 @@ li a:hover {
 
     .items1 {
         align-self: center;
-    }
-
-    .items2 {
-        width: 100%;
     }
 
     .Rechercher {
@@ -697,12 +694,12 @@ li a:hover {
         padding: 50px;
     }
 
-    .populaires {
-        padding: 50px;
-    }
-
     .populaires-cards {
         flex-direction: column;
+    }
+
+    .populaires-title {
+        margin-bottom: 30px;
     }
 
     .hotels {
