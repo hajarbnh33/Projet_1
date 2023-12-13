@@ -10,12 +10,6 @@ body {
     gap: 35px;
     flex-direction: column;
     max-width: 1440px;
-}
-
-.main-container {
-    display: flex;
-    flex-direction: column;
-    gap: 35px;
     padding-left: 50px;
     padding-right: 50px;
     padding-bottom: 58px;
@@ -27,7 +21,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 30px 50px 30px 50px;
+    padding: 30px 50px 30px 0px;
     gap: 10px;
 }
 
@@ -58,10 +52,15 @@ nav a {
     display: flex;
     align-items: center;
     gap: 68px;
-    padding: 0px 50px;
 }
 
 /* Main*/
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
 
 .Container {
     display: flex;
@@ -111,7 +110,7 @@ nav a {
 }
 
 div i.fa-location-dot {
-    color: black; /* vu avec mentor: ajouter balise, id ou class pour avoir plus de priorité */
+    color: black;
     align-items: center;
     padding: 15px 16px;
     font-size: 20px;
@@ -224,7 +223,7 @@ div i.fa-info {
     justify-content: center;
 }
 
-/* Hebergements */
+/* Hebergements-and-populaires */
 
 .hebergements-and-populaires {
     display: flex;
@@ -232,10 +231,7 @@ div i.fa-info {
     justify-content: space-between;
 }
 
-.hotel-card:hover {
-    transform: scale(1.02);
-    transition: ease-in-out 300ms transform;
-}
+/*HEBERGEMENTS*/
 
 .hebergements {
     display: flex;
@@ -270,15 +266,9 @@ div i.fa-info {
     box-sizing: border-box;
 }
 
-.texte1 {
-    display: flex;
-    padding: 0px 15px;
-    flex-direction: column;
-    align-items: flex-start;
-    align-self: stretch;
-    gap: 8px;
-    margin: 0%;
-    color: black;
+.hotel-card:hover {
+    transform: scale(1.02);
+    transition: ease-in-out 300ms transform;
 }
 
 .hotel-card {
@@ -290,6 +280,17 @@ div i.fa-info {
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
     flex-grow: 1;
     width: 25%;
+}
+
+.texte1 {
+    display: flex;
+    padding: 0px 15px;
+    flex-direction: column;
+    align-items: flex-start;
+    align-self: stretch;
+    gap: 8px;
+    margin: 0%;
+    color: black;
 }
 
 .hotel-title {
@@ -315,6 +316,8 @@ div i.fa-info {
     font-weight: 700;
     line-height: normal;
 }
+
+/*POPULAIRES*/
 
 .populaires-cards a {
     width: 100%;
@@ -542,7 +545,7 @@ li a:hover {
 /* Medium devices (tablets, less/equal than 1024px) */
 
 @media (max-width: 1024px) {
-    .main-container {
+    body {
         padding-bottom: 0px;
     }
 
@@ -614,8 +617,10 @@ li a:hover {
 /* Small devices (phones, less than 768px) */
 
 @media (min-width: 320px) and (max-width: 768px) {
-    .main-container {
+    body {
         flex-direction: column;
+        padding-left: 0px;
+        padding-right: 0px;
     }
 
     nav a {
@@ -641,6 +646,8 @@ li a:hover {
     .Container {
         margin-top: 0px;
         align-items: center;
+        padding-left: 20px;
+        padding-right: 20px;
     }
 
     .items1 {
@@ -649,6 +656,10 @@ li a:hover {
 
     .Rechercher {
         display: none;
+    }
+
+    .items2 {
+        width: 100%;
     }
 
     .formulaire {
@@ -671,35 +682,38 @@ li a:hover {
         color: white;
     }
 
-    .items3 {
-        flex-direction: column;
-    }
-
     .liste-filtre {
-        justify-content: space-between;
         gap: 20px;
     }
 
     .Filtre-title {
         width: 30%;
-        overflow: hidden;
+        overflow: scroll;
         flex-grow: 1;
+    }
+
+    .info {
+        padding-left: 20px;
+        padding-right: 20px;
     }
 
     .hebergements-and-populaires {
         flex-direction: column-reverse;
+        gap: 15px;
     }
 
     .hebergements {
-        padding: 50px;
+        padding: 20px;
+        background-color: white;
+    }
+
+    .populaires {
+        padding: 20px 30px 20px 30px;
+        gap: 15px;
     }
 
     .populaires-cards {
         flex-direction: column;
-    }
-
-    .populaires-title {
-        margin-bottom: 30px;
     }
 
     .hotels {
@@ -711,7 +725,7 @@ li a:hover {
     }
 
     .activites-marseille {
-        padding: 50px;
+        padding: 30px;
     }
 
     .activites-card {
@@ -725,9 +739,11 @@ li a:hover {
 
     .footer-content {
         flex-direction: column;
+        gap: 50px;
+        padding: 30px;
     }
 
     .bas-page {
-        padding: 50px;
+        padding: 0px;
     }
 }
