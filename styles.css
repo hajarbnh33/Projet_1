@@ -491,6 +491,12 @@ div i.fa-info {
     flex: 1;
     border-radius: 20px;
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.activites-content:hover {
+    transform: scale(1.02);
+    transition: ease-in-out 300ms transform;
 }
 
 /*FOOTER*/
