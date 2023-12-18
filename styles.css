@@ -1,6 +1,17 @@
+/* variables */
+
+:root {
+    --main-color: #0065fc;
+    --main-bg-color: #f2f2f2;
+    --filter-bg-color: #deebff;
+    --color-texte: #000000;
+    --color-texte-white: #fff;
+}
+
 /* Corps de la page */
 * {
     font-family: Raleway, sans-serif;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -26,13 +37,13 @@ body {
 }
 
 a {
-    color: black;
+    color: var(--color-texte);
     text-decoration: none;
 }
 
 nav a:hover {
-    border-color: #0065fc;
-    color: #0065fc;
+    border-color: var(--main-color);
+    color: var(--main-color);
 }
 
 nav a {
@@ -103,28 +114,24 @@ nav a {
 
 .icone {
     border-radius: 15px 0px 0px 15px;
-    background-color: #f2f2f2;
+    background-color: var(--main-bg-color);
     width: 50px;
     height: 49px;
     flex-shrink: 0;
 }
 
 div i.fa-location-dot {
-    color: black;
+    color: var(--color-texte);
     align-items: center;
     padding: 15px 16px;
     font-size: 20px;
     margin: auto;
 }
 
-.loupe {
-    display: none;
-}
-
-.Rechercher {
+.Search {
     border-radius: 0px 15px 15px 0px;
-    border: 1px solid var(--Blue, #0065fc);
-    background: var(--Blue, #0065fc);
+    border: 1px solid var(--main-color);
+    background: var(--main-color);
     display: flex;
     height: 49px;
     padding: 15px 16px;
@@ -134,7 +141,7 @@ div i.fa-location-dot {
 }
 
 .trechercher {
-    color: var(--White, #fff);
+    color: var(--color-texte-white);
     text-align: center;
     font-family: Raleway;
     font-size: 18px;
@@ -163,7 +170,7 @@ div i.fa-location-dot {
 
 .Filtres h3 {
     display: flex;
-    color: black;
+    color: var(--color-texte);
     text-align: center;
     font-size: 18px;
     font-weight: 700;
@@ -175,7 +182,7 @@ div i.fa-location-dot {
     flex-direction: row;
     gap: 10px;
     border-radius: 25px;
-    border: 2px solid var(--grey-tint-2, #d9d9d9);
+    border: 2px solid lightgrey;
     height: 30px;
     font-weight: 700;
     padding: 4px 19px;
@@ -184,7 +191,7 @@ div i.fa-location-dot {
 }
 
 .Filtre-title:hover {
-    background: #deebff;
+    background: var(--filter-bg-color);
 }
 
 .liste-filtre {
@@ -201,7 +208,7 @@ div i.fa-location-dot {
     gap: 10px;
 }
 
-.infos {
+.info_2 {
     font-size: 0.8em;
     font-style: normal;
     font-weight: 400;
@@ -235,7 +242,7 @@ div i.fa-info {
 
 .hebergements {
     display: flex;
-    background: #f2f2f2;
+    background: var(--main-bg-color);
     border-radius: 15px;
     flex-direction: column;
     padding: 30px;
@@ -262,7 +269,7 @@ div i.fa-info {
     width: 100%;
     object-fit: cover;
     border-radius: 20px 20px 0px 0px;
-    border: 5px solid var(--White, #fff);
+    border: 5px solid var(--color-texte-white);
     box-sizing: border-box;
 }
 
@@ -275,7 +282,7 @@ div i.fa-info {
     display: flex;
     padding-bottom: 15px;
     flex-direction: column;
-    background-color: white;
+    background-color: var(--color-texte-white);
     border-radius: 20px;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
     flex-grow: 1;
@@ -290,7 +297,7 @@ div i.fa-info {
     align-self: stretch;
     gap: 8px;
     margin: 0%;
-    color: black;
+    color: var(--color-texte);
 }
 
 .hotel-title {
@@ -329,7 +336,7 @@ div i.fa-info {
     flex-direction: column;
     gap: 30px;
     border-radius: 15px;
-    background: #f2f2f2;
+    background: var(--main-bg-color);
 }
 
 .populaires-cards {
@@ -343,12 +350,6 @@ div i.fa-info {
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-
-:root {
-    --main-color: #0065fc;
-    --main-bg-color: #f2f2f2;
-    --filter-bg-color: #deebff;
 }
 
 .fa-solid {
@@ -367,14 +368,14 @@ div i.fa-info {
 
 .card {
     display: flex;
-    background-color: white;
+    background-color: var(--color-texte-white);
     border-radius: 20px;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
     height: 146px;
     align-items: center;
     width: 100%;
-    border-top: 5px solid var(--White, #fff);
-    border-bottom: 5px solid var(--White, #fff);
+    border-top: 5px solid var(--color-texte-white);
+    border-bottom: 5px solid var(--color-texte-white);
 }
 
 .card:hover {
@@ -388,9 +389,9 @@ div i.fa-info {
     width: 123px;
     height: 146px;
     border-radius: 20px 0px 0px 20px;
-    border-top: 5px solid var(--White, #fff);
-    border-left: 5px solid var(--White, #fff);
-    border-bottom: 5px solid var(--White, #fff);
+    border-top: 5px solid var(--color-texte-white);
+    border-left: 5px solid var(--color-texte-white);
+    border-bottom: 5px solid var(--color-texte-white);
 }
 
 .card-content {
@@ -513,7 +514,7 @@ div i.fa-info {
 
 .footer-content {
     display: flex;
-    background: #f2f2f2;
+    background: var(--main-bg-color);
 }
 
 .footer-title {
@@ -543,8 +544,8 @@ li a {
 }
 
 li a:hover {
-    border-color: #0065fc;
-    color: #0065fc;
+    border-color: var(--color-texte);
+    color: var(--color-texte);
 }
 
 /****** Media queries ***********/
@@ -644,9 +645,9 @@ li a:hover {
     }
 
     nav a:hover {
-        border-bottom-color: #0065fc;
+        border-bottom-color: var(--main-color);
         border-top-color: transparent;
-        color: #0065fc;
+        color: var(--main-color);
     }
 
     .Container {
@@ -660,7 +661,7 @@ li a:hover {
         align-self: center;
     }
 
-    .Rechercher {
+    .trechercher {
         display: none;
     }
 
@@ -672,10 +673,10 @@ li a:hover {
         width: 100%;
     }
 
-    .loupe {
+    .Search {
         border-radius: 16px 15px 15px 16px;
-        border: 1px solid var(--Blue, #0065fc);
-        background: var(--Blue, #0065fc);
+        border: 1px solid var(--main-color);
+        background: var(--main-color);
         display: flex;
         height: 49px;
         padding: 15px 16px;
@@ -685,7 +686,7 @@ li a:hover {
     }
 
     div i.fa-magnifying-glass {
-        color: white;
+        color: var(--color-texte-white);
     }
 
     .liste-filtre {
@@ -710,7 +711,7 @@ li a:hover {
 
     .hebergements {
         padding: 20px;
-        background-color: white;
+        background-color: var(--color-texte-white);
     }
 
     .populaires {
