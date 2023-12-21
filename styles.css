@@ -1,4 +1,4 @@
-/* variables */
+/* variables couleurs*/
 
 :root {
     --main-color: #0065fc;
@@ -8,7 +8,8 @@
     --color-texte-white: #fff;
 }
 
-/* Corps de la page */
+/* BODY */
+
 * {
     font-family: Raleway, sans-serif;
     scroll-behavior: smooth;
@@ -23,7 +24,7 @@ body {
     max-width: 1440px;
     padding-left: 50px;
     padding-right: 50px;
-    padding-bottom: 58px;
+    padding-bottom: 0px;
 }
 
 /* Header*/
@@ -126,6 +127,10 @@ div i.fa-location-dot {
     padding: 15px 16px;
     font-size: 20px;
     margin: auto;
+}
+
+.Glass {
+    display: none;
 }
 
 .Search {
@@ -552,10 +557,6 @@ li a:hover {
 /* Medium devices (tablets, less/equal than 1024px) */
 
 @media (max-width: 1024px) {
-    body {
-        padding-bottom: 0px;
-    }
-
     .hebergements-and-populaires {
         flex-direction: column;
     }
@@ -665,6 +666,10 @@ li a:hover {
         display: none;
     }
 
+    .Search {
+        display: none;
+    }
+
     .items2 {
         width: 100%;
     }
@@ -673,8 +678,8 @@ li a:hover {
         width: 100%;
     }
 
-    .Search {
-        border-radius: 16px 15px 15px 16px;
+    .Glass {
+        border-radius: 16px 15px 16px 15px;
         border: 1px solid var(--main-color);
         background: var(--main-color);
         display: flex;
